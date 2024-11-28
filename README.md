@@ -45,6 +45,8 @@ A01782982
 
 ## Architecture
 
+The model architecture is based on the transformer architecture
+
 ![architecture](/images/architecture.png)
 
 
@@ -58,7 +60,7 @@ A01782982
 
 - The content is pre-proccessed
 
-[Link](https://www.gutenberg.org/browse/scores/top1000.php)
+For more information about the dataset visit the next link [Project Gutemberg](https://www.gutenberg.org/browse/scores/top1000.php)
 
 
 ## List of Inputs
@@ -93,7 +95,7 @@ A01782982
 
 - ### Ten books
 
-![training_lossOne](/loss_functions/ten_books.png)
+![training_lossTen](/loss_functions/ten_books.png)
 
 
         User: Today is a beutiful day for being happy   
@@ -101,6 +103,30 @@ A01782982
         GPT: Today is a beutiful day for being happy       Be as to you ,  or ,  or have you seen ,  We’ll see you now anon .  And I will not be revenged ,  where you wot not .   ARCITE .  But it shall be a woman in the prison .  A room in the prison  Scene II .  The forest  Scene V .  Athens  The Jailer .  Thebes ,  my lord ,  I am a fair man .  If this world be well said I had rather been myself .  I would not ;  And when I hear I can .   ARCITE .  Thou art a heavenly man ,  not a gentlewoman ,  I should ,  And
 
 - ### One hundred books
+
+
+
+## Usage
+
+One you have set up the environment and installed the dependencies, unzip the folder models.zip 
+
+        unzip models.zip -d ~/Desktop/GPT
+
+- Select one model 
+
+        > oneBook_model
+        > tebBooks_model
+        > hundredBooks_model
+
+- Go to the Test models cell
+- Insert your option and prompts (> 8 tokens)
+
+
+
+## License
+
+This project is licensed under the MIT License
+
 
 
 
