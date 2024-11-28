@@ -6,6 +6,7 @@ A01782982
 
 ## Table of Contents 
 
+- [Introduction](#introduction)
 - [About](#about)
 - [Requirements](#requirements)
 - [Installation](#installation)
@@ -17,8 +18,13 @@ A01782982
 - [License](#license)
 
 
+## Introduction 
+
+This project is an implementation of a GPT-based model trained on a dataset from Project Gutemberg. It aims to explore the capabilities of language models in generating coherent text.
+
 ## About 
 
+This project was developed as part of study of language modudles for my Artificial Intelligence concetration at Tecnologico de Monterrey. It demostrates how transformer-based architecture can be applied to generate text outputs.
 
 
 ## Requirements
@@ -36,11 +42,21 @@ A01782982
 
 ## Installation
 
+- Clone the next repositories locally
+
         git clone git@github.com:MiguelCabreraVictoria/GPT.git ~/Desktop
         
         git clone git@github.com:c-w/gutenberg.git ~/
 
-
+- Run the following Sections
+        
+  - Libraries
+  - Architecture 
+  - GPT Model
+  - Read Text books content
+  - Tokenize content & Data Loaders
+  - Training Model 
+  - Additional Features
 
 
 ## Architecture
@@ -104,6 +120,8 @@ For more information about the dataset visit the next link [Project Gutemberg](h
 
 - ### One hundred books
 
+![training_lossHundred](/loss_functions/hundred_books.png)
+
 
 
 ## Usage
@@ -114,12 +132,14 @@ One you have set up the environment and installed the dependencies, unzip the fo
 
 - Select one model 
 
-        > oneBook_model
-        > tebBooks_model
-        > hundredBooks_model
+        > oneBook_model [option 1]
+        > tebBooks_model [option 2]
+        > hundredBooks_model [option 3]
 
-- Go to the Test models cell
+- Go to the Test models Section 
 - Insert your option and prompts (> 8 tokens)
+
+![usage](/images/usage.png)
 
 
 
