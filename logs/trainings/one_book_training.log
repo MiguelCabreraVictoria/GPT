@@ -1,0 +1,10 @@
+2024-11-27 21:17:23,575 - Epoch 1 (Step 000500): Train loss 5.548, Val loss 5.731
+2024-11-27 21:17:33,882 - Epoch 2 (Step 001000): Train loss 5.223, Val loss 5.521
+2024-11-27 21:17:44,131 - Epoch 3 (Step 001500): Train loss 5.031, Val loss 5.466
+2024-11-27 21:17:54,399 - Epoch 4 (Step 002000): Train loss 4.861, Val loss 5.431
+2024-11-27 21:18:04,656 - Epoch 5 (Step 002500): Train loss 4.752, Val loss 5.455
+2024-11-27 21:18:14,976 - Epoch 6 (Step 003000): Train loss 4.647, Val loss 5.475
+2024-11-27 21:18:25,340 - Epoch 7 (Step 003500): Train loss 4.488, Val loss 5.457
+2024-11-27 21:18:35,654 - Epoch 8 (Step 004000): Train loss 4.328, Val loss 5.453
+2024-11-27 21:18:46,090 - Epoch 9 (Step 004500): Train loss 4.251, Val loss 5.502
+2024-11-27 21:18:56,405 - Epoch 10 (Step 005000): Train loss 4.261, Val loss 5.609
