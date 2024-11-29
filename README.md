@@ -1,8 +1,6 @@
+
+
 # GPT
-
-Miguel Angel Cabrera Victoria
-
-A01782982 
 
 ## Table of Contents 
 
@@ -15,6 +13,8 @@ A01782982
 - [List of inputs](#list-of-inputs)
 - [Usage](#usage)
 - [Results](#results)
+- [Limitations](#limitations)
+- [Future Work](#future-work)
 - [License](#license)
 
 
@@ -22,10 +22,20 @@ A01782982
 
 This project is an implementation of a GPT-based model trained on a dataset from Project Gutemberg. It aims to explore the capabilities of language models in generating coherent text.
 
+### What is a transformer? 
+
+A Transformer is a deep learning neuronal network designed to understand context and meaning bt analyzing the relationship between different words in a sequence.
+
+- Casual-Attention: This allows the model to focus on important parts of a sentence, campuring context effectively
+
+- Parallel Processing: Transformers process all elements of a sequence simultaneously.
+
+
+![levels](/images/levels.png)
+
 ## About 
 
-This project was developed as part of study of language modudles for my Artificial Intelligence concetration at Tecnologico de Monterrey. It demostrates how transformer-based architecture can be applied to generate text outputs.
-
+This project was developed as part of study of language modules for my Artificial Intelligence concetration at Tecnologico de Monterrey. It demostrates how transformer-based architecture can be applied to generate text outputs.
 
 ## Requirements
 
@@ -63,20 +73,75 @@ This project was developed as part of study of language modudles for my Artifici
 
 The model architecture is based on the transformer architecture
 
+Pre-LayerNorm: Layer Normalization before MultiHeadAttention 
+        and dropout (leads to better training dynamics).  
+
+Shorcut Connection: Maintain large gradient values (vanishing gradients)
+
+Normalization(Unit variance): Mean of 0 and variance of 1
+
 ![architecture](/images/architecture.png)
+
+- My architecture configurations
+   
+         
+        Embedding Size: 128
+        Number of header: 6 (count of attention heads in the multi-head attention mechansim)
+        Number of layers: 6 (number of transformer blocks in the model)
+        Dropout: 0.3
+
+- GPT2 configurations
+
+        Embedding size: 768
+        Number of headers: 12
+        Number of layers: 12
+
 
 
 ## Dataset 
 
 ![datasetImage](/images/projectGutemberg.png)
 
+![book1](/images/book1.jpeg) 
+![book2](/images/book2.jpeg)
+![book3](/images/book3.jpeg)
+
 - The dataset is sourced from Project Gutemberg, an online library of free eBooks.
+
+- Complex linguistic structures and extensive vocabulary 
+
+- Spans Various genres, eras, and styles.
+
+- deep semantic undestanding 
 
 - Books are stored in <b>.txt</b> fomat.
 
 - The content is pre-proccessed
 
 For more information about the dataset visit the next link [Project Gutemberg](https://www.gutenberg.org/browse/scores/top1000.php)
+
+
+### Zipf's Law
+
+Statistical principle that describes the frequency distribution of words in natural language. It states that the frequency of a word is inversely propotional to its rank in the frequency table.
+
+
+$$
+f(r) \propto \frac{1}{r^s}
+$$
+
+
+- This law explains the power-law distribution of word frequencies, where a few words appear very frequently, while most words are rare. This principle is crucial for understanding tokenization, vocabulary design, and model optimization in NLP.
+
+
+- Frequent words dominates training dataset, which can bias the model.
+
+![zipf_graph](/images/zipf_1.png)
+![zipf_](/images/zipf_2.png)
+
+### Example Moby Dick 
+
+![zipf_](/images/zipf_3.png)
 
 
 ## List of Inputs
@@ -126,10 +191,6 @@ For more information about the dataset visit the next link [Project Gutemberg](h
 
 ## Usage
 
-One you have set up the environment and installed the dependencies, unzip the folder models.zip 
-
-        unzip models.zip -d ~/Desktop/GPT
-
 - Select one model 
 
         > oneBook_model [option 1]
@@ -142,11 +203,33 @@ One you have set up the environment and installed the dependencies, unzip the fo
 ![usage](/images/usage.png)
 
 
+## Limitations
+
+- Most of the dataset use archic styles or vocabulary
+
+- Books in other languages
+
+- Requires high-end GPU for training 
+
+- Training time 
+
+- Large storage requirements for dataset
+
+## Future Work 
+
+- Optimize dataset
+ 
+  - Select books on genres that align with the desired text generation objectives
+  - Select english texts to maintain consitency and avoid multi-language tokenization complexities
+  - Balance the dataset for better performance
+ 
+
+- Interactive Interface
+  - Create a web-based interface for easier interaction with the trained models
+
+- Fine tuning 
+  - Fine-tune the model on specific genres to improve domain-specific text generation
 
 ## License
 
 This project is licensed under the MIT License
-
-
-
-
