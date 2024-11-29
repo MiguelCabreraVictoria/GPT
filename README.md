@@ -22,7 +22,7 @@
 
 This project is an implementation of a GPT-based model trained on a dataset from Project Gutemberg. It aims to explore the capabilities of language models in generating coherent text.
 
-### What is a transformer? 
+>### What is a transformer? 
 
 A Transformer is a deep learning neuronal network designed to understand context and meaning bt analyzing the relationship between different words in a sequence.
 
@@ -42,7 +42,6 @@ This project was developed as part of study of language modules for my Artificia
 - Python 3
 - CUDA  > 12.2
 - Pytorch 
-
         pip install pandas
         pip install asyncio
         pip install aiohttp
@@ -82,15 +81,14 @@ Normalization(Unit variance): Mean of 0 and variance of 1
 
 ![architecture](/images/architecture.png)
 
-- My architecture configurations
-   
-         
+> My architecture configurations
+
         Embedding Size: 128
         Number of header: 6 (count of attention heads in the multi-head attention mechansim)
         Number of layers: 6 (number of transformer blocks in the model)
         Dropout: 0.3
 
-- GPT2 configurations
+> GPT2 configurations
 
         Embedding size: 768
         Number of headers: 12
@@ -117,6 +115,8 @@ Normalization(Unit variance): Mean of 0 and variance of 1
 - Books are stored in <b>.txt</b> fomat.
 
 - The content is pre-proccessed
+
+![content_memoryUsage](/images/memory_content.png)
 
 For more information about the dataset visit the next link [Project Gutemberg](https://www.gutenberg.org/browse/scores/top1000.php)
 
@@ -193,9 +193,15 @@ $$
 
 - Select one model 
 
-        > oneBook_model [option 1]
-        > tebBooks_model [option 2]
-        > hundredBooks_model [option 3]
+> oneBook_model [option 1]
+
+> tebBooks_model [option 2]
+
+> hundredBooks_model [option 3]
+
+
+
+![memory_modelsUsage](/images/memory_models.png)
 
 - Go to the Test models Section 
 - Insert your option and prompts (> 8 tokens)
