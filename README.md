@@ -8,6 +8,7 @@
 - [About](#about)
 - [Requirements](#requirements)
 - [Installation](#installation)
+- [Methodology](#methodology)
 - [Architecture](#architecture)
 - [Dataset](#dataset)
 - [List of inputs](#list-of-inputs)
@@ -71,7 +72,36 @@ The objective of the project is to showcase how advancements in AI, such as tran
   - Tokenize content & Data Loaders
   - Training Model 
   - Additional Features
+ 
 
+## Methodology
+
+1. Data Collection and Preparation
+  - Dateset
+     - Dowload texts from Project Gutemberg
+     - Select a english texts for the training model
+- Preprocessing
+     - Clean the data by removing irrelevant content
+     - Tokenixe the text to convert words into numerical representations
+2. Model Design
+  - Architecturre
+     -  Use a Transformer-based model with key component
+      -  Words Embeddings
+      -  Attention mechanism
+      -  Feedforward layers
+  - Customization
+     - Adjust model size
+      - Number of layers
+      - Attention heads
+      - embedding    
+3. Model Training
+ - Training Setup
+    - Split the data into training, validation
+    - Use the AdamW optimizer
+    - Define a loss function on cross-entropy
+- Training
+   - Train the model over multiple epochs
+4. Evaluate and Plot Result
 
 ## Architecture
 
