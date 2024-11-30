@@ -20,7 +20,7 @@
 
 ## Introduction 
 
-This project is an implementation of a GPT-based model trained on a dataset from Project Gutemberg. It aims to explore the capabilities of language models in generating coherent text.
+This project involves the implementation of a GPT-based model trained on a dataset from Project Gutenberg. The goal is to explore the potential of language models in generating coherent, contextually relevant text. Using the Transformer architecture, the project focuses on enhancing the ability of AI models to understand and generate natural language. By training the model on a vast corpus of literary works, the model will be able to generate meaningful text, simulate creative writing, and assist with language understanding tasks.
 
 >### What is a transformer? 
 
@@ -41,7 +41,8 @@ This project was developed as part of study of language modules for my Artificia
 
 - Python 3
 - CUDA  > 12.2
-- Pytorch 
+- Pytorch
+  
         pip install pandas
         pip install asyncio
         pip install aiohttp
