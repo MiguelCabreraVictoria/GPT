@@ -35,7 +35,11 @@ A Transformer is a deep learning neuronal network designed to understand context
 
 ## About 
 
-This project was developed as part of study of language modules for my Artificial Intelligence concetration at Tecnologico de Monterrey. It demostrates how transformer-based architecture can be applied to generate text outputs.
+This project was developed as part of the study of language models for my Artificial Intelligence concentration at Tecnológico de Monterrey. It demonstrates how transformer-based architectures can be applied to generate coherent and contextually meaningful text outputs.
+
+By leveraging the Transformer architecture, this project explores the key components of modern natural language processing, including self-attention, causal attention, and parallel processing, to efficiently analyze and generate text. Using a dataset from Project Gutenberg, which contains a rich repository of literary works, the model is trained to mimic patterns, grammar, and structures found in human-authored text.
+
+The objective of the project is to showcase how advancements in AI, such as transformer-based models, can extend beyond traditional computational tasks to more creative domains, such as literature generation and language understanding.
 
 ## Requirements
 
